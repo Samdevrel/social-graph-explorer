@@ -13,6 +13,7 @@ interface Profile {
   tokenBalance: number;
   ownedNFTs: number;
   lensProfile?: string;
+  verified: boolean;
 }
 
 interface Follow {
