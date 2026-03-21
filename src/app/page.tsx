@@ -314,7 +314,7 @@ export default function Home() {
                     {post.verified && <span className="ml-2 text-xs font-bold bg-pink-900 text-pink-400">VERIFIED</span>}
                   </div>
                   <div className="text-xs text-gray-400">
-                    {post.timestamp ? post.timestamp.toLocaleDateString() : ''}
+                    Mar 2026
                   </div>
                 </div>
                 <p className="text-sm text-gray-300 mb-2">{post.content}</p>
