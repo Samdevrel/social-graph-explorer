@@ -45,6 +45,7 @@ const profiles: Profile[] = [
     tokenBalance: 2500,
     ownedNFTs: 87,
     lensProfile: '0x3c...1d4a',
+    verified: true,
   },
   {
     id: 'P-002',
@@ -57,6 +58,7 @@ const profiles: Profile[] = [
     tokenBalance: 8900,
     ownedNFTs: 156,
     lensProfile: '0x5f...7a8b',
+    verified: true,
   },
   {
     id: 'P-003',
@@ -69,6 +71,7 @@ const profiles: Profile[] = [
     tokenBalance: 1200,
     ownedNFTs: 34,
     lensProfile: '0x2a...9c1d',
+    verified: true,
   },
   {
     id: 'P-004',
@@ -81,6 +84,7 @@ const profiles: Profile[] = [
     tokenBalance: 5600,
     ownedNFTs: 203,
     lensProfile: '0x6d...3e8f',
+    verified: true,
   },
   {
     id: 'P-005',
@@ -93,6 +97,7 @@ const profiles: Profile[] = [
     tokenBalance: 3200,
     ownedNFTs: 91,
     lensProfile: '0x8e...2d9f',
+    verified: true,
   },
 ];
 
