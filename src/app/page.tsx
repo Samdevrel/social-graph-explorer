@@ -45,7 +45,6 @@ const profiles: Profile[] = [
     tokenBalance: 2500,
     ownedNFTs: 87,
     lensProfile: '0x3c...1d4a',
-    verified: true,
   },
   {
     id: 'P-002',
@@ -58,7 +57,6 @@ const profiles: Profile[] = [
     tokenBalance: 8900,
     ownedNFTs: 156,
     lensProfile: '0x5f...7a8b',
-    verified: true,
   },
   {
     id: 'P-003',
@@ -71,7 +69,6 @@ const profiles: Profile[] = [
     tokenBalance: 1200,
     ownedNFTs: 34,
     lensProfile: '0x2a...9c1d',
-    verified: true,
   },
   {
     id: 'P-004',
@@ -84,7 +81,6 @@ const profiles: Profile[] = [
     tokenBalance: 5600,
     ownedNFTs: 203,
     lensProfile: '0x6d...3e8f',
-    verified: true,
   },
   {
     id: 'P-005',
@@ -97,7 +93,6 @@ const profiles: Profile[] = [
     tokenBalance: 3200,
     ownedNFTs: 91,
     lensProfile: '0x8e...2d9f',
-    verified: true,
   },
 ];
 
@@ -314,7 +309,7 @@ export default function Home() {
                     {post.verified && <span className="ml-2 text-xs font-bold bg-pink-900 text-pink-400">VERIFIED</span>}
                   </div>
                   <div className="text-xs text-gray-400">
-                    Mar 2026
+                    {post.timestamp ? post.timestamp.toLocaleDateString() : ''}
                   </div>
                 </div>
                 <p className="text-sm text-gray-300 mb-2">{post.content}</p>
@@ -381,13 +376,7 @@ export default function Home() {
         <footer className="text-center text-gray-500 text-sm py-8 border-t border-gray-800">
           <p>
             Built by <a href="https://x.com/samdevrel" className="text-pink-400 hover:underline">@samdevrel</a>
-          <button
-            onClick={() => window.location.href = '/docs/overview'}
-            className="w-full py-4 bg-purple-500 text-white font-bold border-4 border-purple-400 hover:bg-purple-400 mb-4"
-          >
-            {buttonText}
-          </button>
-                    </p>
+          </p>
         </footer>
       </div>
     </main>
